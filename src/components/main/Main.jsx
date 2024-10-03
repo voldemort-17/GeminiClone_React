@@ -162,7 +162,7 @@ function Main() {
           </div>
         </>
       ) : (
-        <div className="w-[45%] m-auto scrollHide">
+        <div className="w-[75%] sm:w-[45%] m-auto scrollHide">
           <div className="flex p-4 gap-4 items-center">
             <FontAwesomeIcon
               icon={faCircleUser}
@@ -196,7 +196,7 @@ function Main() {
         </div>
       )}
 
-      <div className="sm:absolute w-full flex justify-center items-center flex-col bottom-2">
+      <div className="absolute w-full flex justify-center items-center flex-col bottom-2">
         <div className="flex max-w-[900px] w-full items-center justify-between flex-col sm:flex-row">
           <input
             value={input}
