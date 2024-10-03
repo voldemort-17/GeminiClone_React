@@ -78,20 +78,20 @@ function Main() {
 
       {!showResult ? (
         <>
-          <div className="m-auto w-[450px] sm:w-[900px]">
+          <div className="m-auto w-[300px] sm:w-[550px] lg:w-[900px] ">
             <div className="w-[900px] my-[50px] text-[25px] md:text-[50px] p-5 font-medium">
               <p>
                 <span className="headerDesign">Hello, Yash.</span>
               </p>
               <p
-                className={`${
+                className={`flex w-[250px] sm:w-[650px] ${
                   theme == "light" ? "text-[#444746]" : "text-[#c4c7c5]"
                 }`}
               >
                 How can I help you today ?
               </p>
             </div>
-            <div className="flex flex-col m-auto sm:grid gap-[15px] w-[300px] sm:w-[900px] sm:grid-cols-4 p-5 text-[#585858] text-[15px]">
+            <div className="grid gap-[15px] grid-cols-1 m-auto sm:grid-cols-2 sm:w-[550px] lg:w-[900px] lg:grid-cols-4 p-5 text-[#585858] text-[15px]">
               <div
                 className={`cardDesign ${
                   theme == "light" ? "bg-[#1e1f20]" : "bg-[#f0f4f9]"
@@ -141,7 +141,7 @@ function Main() {
                 />
               </div>
               <div
-                className={`cardDesign ${
+                className={`cardDesign mb-16 sm:mb-0 ${
                   theme == "light" ? "bg-[#1e1f20]" : "bg-[#f0f4f9]"
                 } ${
                   theme == "light" ? "hover:bg-[#333537]" : "hover:bg-[#dfe4ea]"
@@ -196,7 +196,7 @@ function Main() {
         </div>
       )}
 
-      <div className="sm:absolute w-full flex justify-center items-center flex-col bottom-2">
+      <div className="absolute w-full flex justify-center items-center flex-col bottom-2">
         <div className="flex max-w-[900px] w-full items-center justify-between flex-col sm:flex-row">
           <input
             value={input}
@@ -244,12 +244,12 @@ function Main() {
           </div>
         </div>
         <p
-          className={`mt-2 px-2 text-[12px] items-center ${
+          className={`mt-2 px-2 text-[12px] flex flex-col justify-center items-center ${
             theme == "dark" ? "text-black" : "text-[#e3e3e3]"
           }`}
         >
-          Gemini may display inaccurate info, including about people, so
-          double-check its responses.
+          <div className="">Gemini may display inaccurate info, including about people, so
+          double-check its responses.</div>
           <a href="#" className="underline">
             Your privacy and Gemini Apps
           </a>
