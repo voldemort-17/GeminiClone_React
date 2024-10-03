@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@layer utilities {
+    .item-container {
+        @apply inline-flex gap-3 px-3 py-2 w-[16vw] items-center text-[15px] text-[#282828] cursor-pointer rounded-[50px] 
+    }
+}

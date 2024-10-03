@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.headerDesign {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.loadingBar {
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #9ed7ff, #ffffff ,#9ed7ff);
+    height: 20px;
+    background-size: 800px 50px;
+    animation: anim 3s linear infinite;
+}
+
+.scrollHide {
+    overflow-y: scroll;
+    max-height: 77vh;
+}
+
+.scrollHide::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes anim {
+    0% {
+        background-position: -800px 0;
+    }
+    100% {
+        background-position: 800px 0;
+    }
+}
+
+@layer utilities {
+    .cardDesign {
+        @apply min-h-52 p-4 cursor-pointer rounded-lg relative  
+    }
+
+    .cardIconDesign {
+        @apply absolute bottom-3 right-3 w-4 p-2 rounded-[50%] 
+    }
+}
